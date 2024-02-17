@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .burger{
+        @apply absolute right-4 flex flex-col;
+    }
+    .hamburger-line {
+        @apply w-[32px] h-[1px] p-[2px] bg-dark my-[4px] transition-all duration-500;
+    }
+ 
+}
+/* list navigasi */
+.list-nav{
+    @apply group-hover:text-pink md:text-[17px] transition-all duration-500;
+}
+.showCanvas{
+    @apply flex;
+}
+.nav-fixed{
+    @apply fixed z-[999] bg-white bg-opacity-30 backdrop-blur-[4px];
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+}
+
+.burger-aktif > span:nth-child(1){
+    @apply w-[35px];
+}
+.burger-aktif > span:nth-child(2){
+    @apply w-[20px];
+}
+.burger-aktif > span:nth-child(3){
+    @apply w-[25px];
+}
